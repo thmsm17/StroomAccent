@@ -228,7 +228,7 @@ export default function App() {
         {/* Hero background image */}
         <div
           className="absolute inset-0 bg-center bg-cover bg-no-repeat"
-          style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}
+          style={{ backgroundImage: `url('${import.meta.env.BASE_URL}images/hero-bg.jpg')` }}
         />
         {/* Dark overlay for readability */}
         <div className="absolute inset-0 bg-gradient-to-br from-black/75 via-black/60 to-black/50" />
