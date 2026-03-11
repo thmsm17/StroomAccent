@@ -214,29 +214,18 @@ export default function App() {
       <section
         id="home"
         className="relative min-h-screen flex items-center justify-center overflow-hidden"
-        style={{
-          background: "linear-gradient(135deg, hsl(215 40% 18%) 0%, hsl(215 35% 12%) 50%, hsl(215 40% 8%) 100%)",
-        }}
       >
-        {/* Decorative pattern */}
-        <div className="absolute inset-0 opacity-10">
-          <div
-            className="absolute inset-0"
-            style={{
-              backgroundImage:
-                "radial-gradient(circle at 1px 1px, rgba(255,255,255,0.4) 1px, transparent 0)",
-              backgroundSize: "40px 40px",
-            }}
-          />
-        </div>
-        {/* Orange glow */}
+        {/* Hero background image */}
         <div
-          className="absolute top-1/3 right-1/4 w-96 h-96 rounded-full opacity-20 blur-3xl"
-          style={{ background: "hsl(28 90% 52%)" }}
+          className="absolute inset-0 bg-center bg-cover bg-no-repeat"
+          style={{ backgroundImage: "url('/images/hero-bg.png')" }}
         />
+        {/* Dark overlay for readability */}
+        <div className="absolute inset-0 bg-gradient-to-br from-black/75 via-black/60 to-black/50" />
+        {/* Orange accent overlay */}
         <div
-          className="absolute bottom-1/4 left-1/4 w-64 h-64 rounded-full opacity-15 blur-3xl"
-          style={{ background: "hsl(28 90% 52%)" }}
+          className="absolute inset-0 opacity-20"
+          style={{ background: "linear-gradient(135deg, hsl(215 50% 20% / 0.6) 0%, transparent 60%)" }}
         />
 
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
