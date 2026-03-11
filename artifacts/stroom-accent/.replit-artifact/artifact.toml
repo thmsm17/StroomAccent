@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Stroom Accent"
+version = "1.0.0"
+id = "artifacts/stroom-accent"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+localPort = 22087
+name = "web"
+paths = ["/"]
+
+[services.development]
+run = "pnpm --filter @workspace/stroom-accent run dev"
+
+[services.env]
+PORT = "22087"
+BASE_PATH = "/"
+
+[services.production]
+build = ["pnpm", "--filter", "@workspace/stroom-accent", "run", "build"]
+publicDir = "artifacts/stroom-accent/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"

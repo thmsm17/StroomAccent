@@ -1,0 +1,17 @@
+packages:
+  "framer-motion": "For premium smooth entry animations and page transitions"
+  "react-hook-form": "For robust form state management"
+  "@hookform/resolvers": "For Zod validation integration with forms"
+  "zod": "For schema validation on the contact form"
+
+images:
+  - path: "artifacts/stroom-accent/public/images/logo.png"
+    description: "Minimalist geometric modern logo for an electrician company named 'Stroom Accent'. Deep navy blue and warm amber/orange colors. Clean, professional, trustworthy. Transparent background."
+    aspect_ratio: "1:1"
+  - path: "artifacts/stroom-accent/public/images/hero-bg.png"
+    description: "Abstract premium background. Deep rich navy blue with subtle warm amber/gold glowing light leaks and soft geometric waves. Conveys energy, electricity, and premium service."
+    aspect_ratio: "16:9"
+
+notes:
+  - This is a single-page scrolling website. Routing is minimal.
+  - Form submission will be mocked with a success toast since there is no backend API requested.
