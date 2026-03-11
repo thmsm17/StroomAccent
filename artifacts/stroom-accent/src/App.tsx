@@ -64,6 +64,11 @@ const services = [
     title: "Zonnepanelen",
     desc: "Installatie en aansluiting van zonnepanelen op het elektriciteitsnet. Duurzaam en voordelig.",
   },
+  {
+    img: "laadpaal.jpg",
+    title: "Laadpalen",
+    desc: "Plaatsing van laadpalen voor elektrische voertuigen, thuis of op het bedrijf. Snel en veilig geïnstalleerd.",
+  },
 ];
 
 function Stars({ count }: { count: number }) {
