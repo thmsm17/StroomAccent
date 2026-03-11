@@ -83,6 +83,16 @@ const services = [
     title: "Nieuwbouw & renovatie",
     desc: "Van nieuwbouw tot volledige renovatie: wij begeleiden uw project van begin tot eind.",
   },
+  {
+    icon: (
+      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1M4.22 4.22l.707.707M18.364 18.364l.707.707M1 12h1m20 0h1M4.22 19.778l.707-.707M18.364 5.636l.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3H5a2 2 0 00-2 2v3m4-5h4m4 0h4a2 2 0 012 2v3M3 19v-3m18 3v-3" />
+      </svg>
+    ),
+    title: "Zonnepanelen",
+    desc: "Installatie en aansluiting van zonnepanelen op het elektriciteitsnet. Duurzaam en voordelig.",
+  },
 ];
 
 function Stars({ count }: { count: number }) {
@@ -218,7 +228,7 @@ export default function App() {
         {/* Hero background image */}
         <div
           className="absolute inset-0 bg-center bg-cover bg-no-repeat"
-          style={{ backgroundImage: "url('/images/hero-bg.png')" }}
+          style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}
         />
         {/* Dark overlay for readability */}
         <div className="absolute inset-0 bg-gradient-to-br from-black/75 via-black/60 to-black/50" />
