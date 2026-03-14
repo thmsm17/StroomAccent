@@ -555,6 +555,40 @@ export default function App() {
               )}
             </div>
           </div>
+
+          {/* Google Maps */}
+          <div className="mt-10 rounded-2xl overflow-hidden border border-card-border shadow-sm">
+            <div className="flex items-center justify-between px-5 py-3.5 bg-card border-b border-card-border">
+              <div className="flex items-center gap-2">
+                <svg className="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <span className="text-sm font-medium text-foreground">Monseigneur Moorslaan 16, 5971 VJ Grubbenvorst</span>
+              </div>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Monseigneur+Moorslaan+16,+5971+VJ+Grubbenvorst"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs font-medium text-primary hover:underline flex items-center gap-1"
+              >
+                Open in Google Maps
+                <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
+            <iframe
+              title="Stroom Accent locatie"
+              src="https://maps.google.com/maps?q=Monseigneur+Moorslaan+16,+5971+VJ+Grubbenvorst,+Nederland&output=embed&z=16"
+              width="100%"
+              height="320"
+              style={{ border: 0, display: "block" }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div>
         </div>
       </section>
 
