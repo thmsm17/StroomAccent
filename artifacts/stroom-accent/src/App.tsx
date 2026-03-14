@@ -232,7 +232,7 @@ export default function App() {
           </h1>
 
           <p className="text-lg sm:text-xl text-white/70 mb-10 max-w-2xl mx-auto">
-            Van groepenkast tot volledige installatie — Stroom Accent staat voor u klaar. Vakkundig, snel en met oog voor detail.
+            Van groepenkast tot volledige installatie staat Stroom Accent voor u klaar. Vakkundig, snel en met oog voor detail.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -470,8 +470,8 @@ export default function App() {
                 <h3 className="font-semibold text-foreground mb-5">Openingstijden</h3>
                 <div className="flex flex-col gap-2">
                   {[
-                    { dag: "Maandag – Vrijdag", tijd: "08:00 – 18:00" },
-                    { dag: "Zaterdag", tijd: "09:00 – 13:00" },
+                    { dag: "Maandag – Vrijdag", tijd: "08:30 – 18:00" },
+                    { dag: "Zaterdag", tijd: "08:30 – 16:00" },
                     { dag: "Zondag", tijd: "Gesloten" },
                   ].map((t) => (
                     <div key={t.dag} className="flex justify-between items-center py-2 border-b border-border last:border-0">
