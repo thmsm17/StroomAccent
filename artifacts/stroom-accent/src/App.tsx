@@ -123,7 +123,9 @@ export default function App() {
             <a href="#home" className="flex items-center gap-2">
               <div className="w-9 h-9 rounded-lg bg-primary flex items-center justify-center">
                 <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8c2 0 3 2 5 2s3-2 5-2 3 2 5 2" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 13c2 0 3 2 5 2s3-2 5-2 3 2 5 2" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 18c2 0 3 2 5 2s3-2 5-2 3 2 5 2" />
                 </svg>
               </div>
               <span className={`font-bold text-lg transition-colors ${scrolled ? "text-foreground" : "text-white"}`}>
@@ -219,12 +221,12 @@ export default function App() {
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
             </svg>
-            <span className="text-sm font-medium text-orange-300">Erkend elektricien</span>
+            <span className="text-sm font-medium text-primary">Erkend elektricien</span>
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
             Uw betrouwbare{" "}
-            <span style={{ color: "hsl(28 90% 60%)" }}>elektricien</span>
+            <span className="text-primary">elektricien</span>
             <br />
             in Grubbenvorst en omgeving
           </h1>
@@ -352,34 +354,12 @@ export default function App() {
               </div>
             </div>
             <div className="relative">
-              <div
-                className="rounded-2xl overflow-hidden h-80 lg:h-96 flex items-center justify-center"
-                style={{ background: "linear-gradient(135deg, hsl(215 40% 18%), hsl(215 35% 12%))" }}
-              >
-                <div className="text-center text-white/80 p-8">
-                  <div className="w-20 h-20 rounded-2xl bg-primary/20 border border-primary/30 flex items-center justify-center mx-auto mb-4">
-                    <svg className="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg>
-                  </div>
-                  <div className="text-2xl font-bold text-white">Stroom Accent</div>
-                  <div className="text-white/60 mt-1">Grubbenvorst & omgeving</div>
-                  <div className="mt-6 flex flex-col gap-2 text-sm text-white/60">
-                    <div className="flex items-center gap-2 justify-center">
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                      </svg>
-                      Monseigneur Moorslaan 16, Grubbenvorst
-                    </div>
-                    <div className="flex items-center gap-2 justify-center">
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                      </svg>
-                      0681775168
-                    </div>
-                  </div>
-                </div>
+              <div className="rounded-2xl overflow-hidden h-80 lg:h-96">
+                <img
+                  src={`${import.meta.env.BASE_URL}images/bus.png`}
+                  alt="Stroom Accent bedrijfswagen"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="absolute -bottom-4 -right-4 w-24 h-24 rounded-2xl bg-primary flex items-center justify-center shadow-lg">
                 <div className="text-center text-white">
@@ -588,7 +568,9 @@ export default function App() {
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
                 <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8c2 0 3 2 5 2s3-2 5-2 3 2 5 2" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 13c2 0 3 2 5 2s3-2 5-2 3 2 5 2" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 18c2 0 3 2 5 2s3-2 5-2 3 2 5 2" />
                 </svg>
               </div>
               <span className="font-bold text-white">Stroom Accent</span>
