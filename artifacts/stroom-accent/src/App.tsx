@@ -330,7 +330,7 @@ export default function App() {
                 Stroom Accent is uw vertrouwde elektrotechnisch vakbedrijf in Grubbenvorst en de regio. Wij zijn gespecialiseerd in zowel particuliere als zakelijke elektrotechnische werkzaamheden.
               </p>
               <p className="mt-4 text-muted-foreground leading-relaxed">
-                Of het nu gaat om het vervangen van een verouderde groepenkast, het aanleggen van een complete elektrische installatie of het oplossen van een storing — wij staan voor u klaar. Kwaliteit, veiligheid en klanttevredenheid staan bij ons altijd voorop.
+                Of het nu gaat om het vervangen van een verouderde groepenkast, het aanleggen van een complete elektrische installatie of het oplossen van een storing: wij staan voor u klaar. Kwaliteit, veiligheid en klanttevredenheid staan bij ons altijd voorop.
               </p>
               <div className="mt-8 grid grid-cols-2 gap-4">
                 {[
