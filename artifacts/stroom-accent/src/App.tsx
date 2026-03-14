@@ -579,8 +579,8 @@ export default function App() {
               Monseigneur Moorslaan 16, 5971 VJ Grubbenvorst &nbsp;·&nbsp;{" "}
               <a href="tel:0681775168" className="hover:text-primary transition-colors">0681775168</a>
             </div>
-            <div className="text-xs text-white/40">
-              © {new Date().getFullYear()} Stroom Accent. Alle rechten voorbehouden.
+            <div className="text-xs text-white/40 text-center">
+              © {new Date().getFullYear()} Stroom Accent. Alle rechten voorbehouden. &nbsp;·&nbsp; KVK: 86203045
             </div>
           </div>
         </div>
