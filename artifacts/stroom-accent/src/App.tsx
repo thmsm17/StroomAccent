@@ -354,11 +354,11 @@ export default function App() {
               </div>
             </div>
             <div className="relative">
-              <div className="rounded-2xl overflow-hidden h-80 lg:h-96">
+              <div className="rounded-2xl overflow-hidden">
                 <img
                   src={`${import.meta.env.BASE_URL}images/bus.png`}
                   alt="Stroom Accent bedrijfswagen"
-                  className="w-full h-full object-cover"
+                  className="w-full h-auto block"
                 />
               </div>
               <div className="absolute -bottom-4 -right-4 w-24 h-24 rounded-2xl bg-primary flex items-center justify-center shadow-lg">
